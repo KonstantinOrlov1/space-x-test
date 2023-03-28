@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts//Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//нашел этот шриф в свободном доступе только в ttf
+
+@mixin fontInter500($color) {
+  font-family: "Inter";
+  font-weight: 500;
+  color: $color;
+}
+
+@mixin fontInter400($color) {
+  font-family: "Inter";
+  font-weight: 400;
+  color: $color;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
